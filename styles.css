@@ -34,3 +34,25 @@ body.dark-mode {
 }
 
 /* Additional dark mode styles as needed */
+/* Ensure the table headers are left-aligned and have consistent padding */
+.table th, .table td {
+    text-align: left;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+/* Ensure small elements are aligned */
+.table td small {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Ensure that tables inside the Devices column are aligned */
+.table-sm {
+    width: 100%;
+}
+
+.table-sm td {
+    padding: 4px;
+}
