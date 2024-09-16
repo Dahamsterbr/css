@@ -1,16 +1,21 @@
 /* Default Light Mode Styles */
 body {
-    background-color: #f8f9fa; /* Light background */
-    color: #212529; /* Dark text */
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
 .navbar {
-    background-color: #ffffff; /* Light navbar */
+    background-color: #ffffff;
     color: #212529;
 }
 
 .card {
-    background-color: #ffffff; /* Light card background */
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.table {
+    background-color: #ffffff;
     color: #212529;
 }
 
@@ -21,26 +26,27 @@ body.dark-mode {
 }
 
 .navbar.dark-mode {
-    background-color: #1f1f1f; /* Dark navbar */
+    background-color: #1f1f1f;
     color: #f8f9fa;
 }
 
 .card.dark-mode {
-    background-color: #2b2b2b; /* Dark card background */
+    background-color: #2b2b2b;
     color: #f8f9fa;
 }
 
 .table.dark-mode {
-    background-color: #2b2b2b; /* Dark table background */
+    background-color: #2b2b2b;
     color: #f8f9fa;
+    border-color: #444; /* Darker borders for the table */
 }
 
-.btn-outline-secondary.dark-mode {
-    border-color: #f8f9fa; /* Button border for dark mode */
-    color: #f8f9fa; /* Button text color */
+.table th, .table td {
+    background-color: #2b2b2b;
+    color: #f8f9fa;
+    border-color: #444; /* Adjust borders for dark mode */
 }
 
-/* Dark mode for links */
 a.dark-mode {
     color: #bb86fc;
 }
@@ -49,7 +55,15 @@ a.dark-mode:hover {
     color: #3700b3;
 }
 
-/* Additional styles for consistency */
-.card-header.dark-mode, .card-body.dark-mode, .table th.dark-mode, .table td.dark-mode {
-    background-color: #2b2b2b;
+/* Buttons in dark mode */
+.btn-outline-secondary.dark-mode {
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+}
+
+/* Dark mode for input fields */
+.form-control.dark-mode {
+    background-color: #333;
+    color: #f8f9fa;
+    border-color: #555;
 }
