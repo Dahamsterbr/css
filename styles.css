@@ -1,58 +1,55 @@
-/* Light Theme (Default) */
+/* Default Light Mode Styles */
 body {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Light background */
+    color: #212529; /* Dark text */
+}
+
+.navbar {
+    background-color: #ffffff; /* Light navbar */
     color: #212529;
 }
 
-/* Dark Theme */
+.card {
+    background-color: #ffffff; /* Light card background */
+    color: #212529;
+}
+
+/* Dark Mode Styles */
 body.dark-mode {
-    background-color: #212529;
-    color: #f8f9fa;
+    background-color: #121212; /* Dark background */
+    color: #f8f9fa; /* Light text */
 }
 
 .navbar.dark-mode {
-    background-color: #343a40 !important;
+    background-color: #1f1f1f; /* Dark navbar */
+    color: #f8f9fa;
+}
+
+.card.dark-mode {
+    background-color: #2b2b2b; /* Dark card background */
+    color: #f8f9fa;
 }
 
 .table.dark-mode {
+    background-color: #2b2b2b; /* Dark table background */
     color: #f8f9fa;
-}
-
-.table.dark-mode th,
-.table.dark-mode td {
-    border-color: #454d55;
 }
 
 .btn-outline-secondary.dark-mode {
-    color: #f8f9fa;
-    border-color: #f8f9fa;
+    border-color: #f8f9fa; /* Button border for dark mode */
+    color: #f8f9fa; /* Button text color */
 }
 
-.btn-outline-secondary.dark-mode:hover {
-    background-color: #6c757d;
-    border-color: #6c757d;
+/* Dark mode for links */
+a.dark-mode {
+    color: #bb86fc;
 }
 
-/* Additional dark mode styles as needed */
-/* Ensure the table headers are left-aligned and have consistent padding */
-.table th, .table td {
-    text-align: left;
-    padding: 8px;
-    vertical-align: middle;
+a.dark-mode:hover {
+    color: #3700b3;
 }
 
-/* Ensure small elements are aligned */
-.table td small {
-    display: inline-block;
-    width: 100%;
-    white-space: nowrap; /* Prevent wrapping */
-}
-
-/* Ensure that tables inside the Devices column are aligned */
-.table-sm {
-    width: 100%;
-}
-
-.table-sm td {
-    padding: 4px;
+/* Additional styles for consistency */
+.card-header.dark-mode, .card-body.dark-mode, .table th.dark-mode, .table td.dark-mode {
+    background-color: #2b2b2b;
 }
