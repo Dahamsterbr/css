@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.card').forEach(card => card.classList.add('dark-mode'));
         document.querySelectorAll('.table').forEach(table => table.classList.add('dark-mode'));
         document.querySelectorAll('.btn-outline-secondary').forEach(btn => btn.classList.add('dark-mode'));
-        document.querySelector('main').classList.add('dark-mode'); // Apply dark mode to main element
+        document.querySelector('main').classList.add('dark-mode');
+
+        // Toggle input, textarea, and select fields to dark mode
+        document.querySelectorAll('input, textarea, select').forEach(field => field.classList.add('dark-mode'));
+
         themeToggleBtn.innerHTML = '<i class="bi bi-sun-fill"></i>'; // Change icon to sun
         localStorage.setItem('theme', 'dark');
     }
@@ -35,7 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.card').forEach(card => card.classList.remove('dark-mode'));
         document.querySelectorAll('.table').forEach(table => table.classList.remove('dark-mode'));
         document.querySelectorAll('.btn-outline-secondary').forEach(btn => btn.classList.remove('dark-mode'));
-        document.querySelector('main').classList.remove('dark-mode'); // Remove dark mode from main element
+        document.querySelector('main').classList.remove('dark-mode');
+
+        // Remove dark mode from input, textarea, and select fields
+        document.querySelectorAll('input, textarea, select').forEach(field => field.classList.remove('dark-mode'));
+
         themeToggleBtn.innerHTML = '<i class="bi bi-moon-fill"></i>'; // Change icon to moon
         localStorage.setItem('theme', 'light');
     }
