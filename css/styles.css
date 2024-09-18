@@ -14,6 +14,28 @@ body.dark-mode {
     line-height: 1.5;
 }
 
+body .container, body .container.mt-3 {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 1rem; /* mt-3 margin applied */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode for Container */
+body.dark-mode .container, 
+body.dark-mode .container.mt-3 {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 1rem; /* mt-3 margin applied */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
 /* Navbar, Card Headers, Cards, Tables, Modals */
 /* Light Mode */
 .navbar, .card-header, .card, .table, .modal-body, .modal-content, #modal-body-content {
