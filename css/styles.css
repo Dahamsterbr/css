@@ -1,77 +1,72 @@
-/* General Dark Mode for body */
+/* General Dark Mode for Body */
 body.dark-mode {
     background-color: #212529 !important;
     color: #f8f9fa !important;
 }
 
 /* Navbar */
-.navbar.dark-mode {
-    background-color: #343a40 !important;
-}
-
-/* Cards */
-.card.dark-mode {
+.navbar.dark-mode, .card-header.dark-mode, .card.dark-mode, .table.dark-mode, .modal-body, .modal-content {
     background-color: #343a40 !important;
     color: #f8f9fa !important;
+}
+
+.card.dark-mode, .table.dark-mode, .table-bordered th, .table-bordered td, .modal-header, .modal-footer, .table tbody tr {
     border-color: #454d55 !important;
 }
 
-/* Tables */
-.table.dark-mode {
-    background-color: #343a40 !important;
+/* Buttons */
+.btn-outline-secondary.dark-mode, .modal-footer .btn-secondary {
     color: #f8f9fa !important;
-    border-color: #454d55 !important;
+    border-color: #f8f9fa !important;
+    background-color: #6c757d !important;
 }
 
-.table.dark-mode th, .table.dark-mode td {
-    border-color: #454d55 !important;
+.btn-outline-secondary.dark-mode:hover, .modal-footer .btn-secondary:hover {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
 }
 
-/* Input, Textarea, Select fields */
+/* Input, Textarea, Select Fields */
 input.dark-mode, textarea.dark-mode, select.dark-mode {
     background-color: #454d55 !important;
     color: #f8f9fa !important;
     border-color: #6c757d !important;
 }
 
-/* Buttons */
-.btn-outline-secondary.dark-mode {
-    color: #f8f9fa !important;
-    border-color: #f8f9fa !important;
-}
-
-.btn-outline-secondary.dark-mode:hover {
-    background-color: #6c757d !important;
-    border-color: #6c757d !important;
-}
-
-/* Ensure main content area gets dark mode */
-main.dark-mode {
+/* Ensure Main Content Area and Containers */
+main.dark-mode, .container.dark-mode, .row.dark-mode {
     background-color: #212529 !important;
     color: #f8f9fa !important;
 }
 
-/* Add dark-mode for any additional elements as necessary */
-/* Dark Mode for containers and rows */
-.container.dark-mode, .row.dark-mode {
-    background-color: #212529 !important;
-    color: #f8f9fa !important;
+/* Tables */
+body.dark-mode table, body.dark-mode .table {
+    background-color: #343a40; /* Dark background for tables */
+    color: #f8f9fa; /* Light text for tables */
+    border-color: #454d55; /* Darker border for the table */
 }
 
-/* Dark Mode for card-header */
-.card-header.dark-mode {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
+body.dark-mode .table th, body.dark-mode .table td, body.dark-mode table th, body.dark-mode table td {
+    background-color: #454d55; /* Darker background for table cells */
+    color: #f8f9fa; /* Light text */
+    border-color: #6c757d; /* Slightly lighter border for table cells */
 }
 
-/* Dark Mode for table headers and cells */
-.table.dark-mode th, .table.dark-mode td {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
-    border-color: #454d55 !important;
+body.dark-mode .table th {
+    background-color: #495057; /* Slightly lighter background for table headers */
+    color: #f8f9fa; /* Light text for table headers */
 }
 
-/* Dark Mode for Modal */
+body.dark-mode .table-light {
+    background-color: #495057; /* Darker table light headers */
+    color: #f8f9fa;
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+    background-color: #495057; /* Hover effect for rows in dark mode */
+}
+
+/* Modals */
 body.dark-mode .modal-content {
     background-color: #343a40; /* Dark background */
     color: #f8f9fa; /* Light text */
@@ -87,36 +82,6 @@ body.dark-mode .modal-header .modal-title {
     color: #f8f9fa; /* Light text for title */
 }
 
-body.dark-mode .modal-body {
-    background-color: #343a40; /* Same dark background as modal content */
-    color: #f8f9fa; /* Light text for body */
-}
-
 body.dark-mode .btn-close {
     filter: invert(1); /* Makes the close button visible in dark mode */
-}
-
-body.dark-mode .modal-footer .btn-secondary {
-    background-color: #6c757d; /* Dark secondary button */
-    border-color: #6c757d; /* Matching border color */
-    color: #f8f9fa; /* Light text on button */
-}
-
-/* Dark Mode for Table Elements */
-body.dark-mode table {
-    background-color: #343a40; /* Dark background for tables */
-    color: #f8f9fa; /* Light text for tables */
-    border-color: #454d55; /* Darker border for the table */
-}
-
-body.dark-mode table th, 
-body.dark-mode table td {
-    background-color: #454d55; /* Darker background for table cells */
-    color: #f8f9fa; /* Light text */
-    border-color: #6c757d; /* Slightly lighter border for table cells */
-}
-
-body.dark-mode table th {
-    background-color: #495057; /* Slightly lighter background for table headers */
-    color: #f8f9fa; /* Light text for table headers */
 }
