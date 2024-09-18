@@ -37,7 +37,7 @@ body.dark-mode .container.mt-3 {
 
 /* Navbar, Cards, and Tables */
 .navbar, .card-header, .card, .table, .modal-body, .modal-content, #modal-body-content {
-    background-color: #ffffff !important;
+    background-color: #4346da !important;
     color: #212529 !important;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
