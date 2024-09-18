@@ -14,130 +14,163 @@ body.dark-mode {
     line-height: 1.5;
 }
 
+/* Container and Cards */
 body .container, body .container.mt-3 {
     background-color: #ffffff !important;
     color: #212529 !important;
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 1rem; /* mt-3 margin applied */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
 
-/* Dark Mode for Container */
 body.dark-mode .container, 
 body.dark-mode .container.mt-3 {
     background-color: #343a40 !important;
     color: #f8f9fa !important;
     padding: 20px;
-    border-radius: 8px;
-    margin-top: 1rem; /* mt-3 margin applied */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Navbar, Card Headers, Cards, Tables, Modals */
-/* Light Mode */
+/* Navbar, Cards, and Tables */
 .navbar, .card-header, .card, .table, .modal-body, .modal-content, #modal-body-content {
     background-color: #ffffff !important;
     color: #212529 !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
-/* Light Mode for Modal */
-body .modal-content, body #modal-body-content {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-/* Dark Mode for Modal */
+body.dark-mode .navbar, 
+body.dark-mode .card-header, 
+body.dark-mode .card, 
+body.dark-mode .table, 
+body.dark-mode .modal-body, 
 body.dark-mode .modal-content, 
 body.dark-mode #modal-body-content {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-/* Dark Mode */
-.navbar.dark-mode, 
-.card-header.dark-mode, 
-.card.dark-mode, 
-.card-body.dark-mode, 
-.p-2.dark-mode, 
-.mb-0.dark-mode, 
-.table.dark-mode, 
-.modal-body.dark-mode, 
-.modal-content.dark-mode, 
-#modal-body-content.dark-mode {
     background-color: #2b2e33 !important;
     color: #f8f9fa !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlight specific elements on hover */
+.col-12:hover, h6:hover {
+    background-color: #e9ecef !important;
+    color: #495057 !important;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+body.dark-mode .col-12:hover, 
+body.dark-mode h6:hover {
+    background-color: #495057 !important;
+    color: #f8f9fa !important;
     transition: all 0.3s ease-in-out;
 }
 
-.card, 
-.table, 
-.table-bordered th, 
-.table-bordered td, 
-.modal-header, 
-.modal-footer, 
-.table tbody tr {
-    border-color: #dee2e6 !important; /* Light mode default border */
-    transition: border-color 0.3s ease-in-out;
-}
-
-/* Dark Mode Borders */
-.card.dark-mode, 
-.table.dark-mode, 
-.table-bordered th, 
-.table-bordered td, 
-.modal-header.dark-mode, 
-.modal-footer.dark-mode, 
-.table tbody tr.dark-mode {
-    border-color: #454d55 !important;
-}
-
-/* Buttons */
-/* Light Mode */
-.btn-outline-secondary, .modal-footer .btn-secondary {
+/* Table Styling */
+.table th, .table td {
+    padding: 10px;
+    background-color: #ffffff !important;
     color: #212529 !important;
+    border-color: #dee2e6 !important;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .table th, 
+body.dark-mode .table td {
+    background-color: #454d55 !important;
+    color: #f8f9fa !important;
     border-color: #6c757d !important;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Table Headers */
+.table th {
+    background-color: #e9ecef !important;
+    color: #212529 !important;
+    font-weight: bold;
+}
+
+body.dark-mode .table th {
+    background-color: #495057 !important;
+    color: #f8f9fa !important;
+    font-weight: bold;
+}
+
+/* Devices Table in Cards */
+.card-body .device-table {
+    background-color: #ffffff !important;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .card-body .device-table {
+    background-color: #454d55 !important;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Table Hover Effect */
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+    background-color: #495057 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Modern Card and Shadow Effects */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .card {
+    background-color: #343a40 !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Padding and Margin Adjustments */
+body .p-2 {
+    padding: 0.5rem !important;
     background-color: #ffffff !important;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
 }
 
-.btn-outline-secondary:hover, .modal-footer .btn-secondary:hover {
-    background-color: #6c757d !important;
-    border-color: #6c757d !important;
-    color: #ffffff !important;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-}
-
-/* Dark Mode Buttons */
-.btn-outline-secondary.dark-mode, 
-.modal-footer .btn-secondary.dark-mode {
-    color: #f8f9fa !important;
-    border-color: #f8f9fa !important;
-    background-color: #6c757d !important;
+body.dark-mode .p-2 {
+    padding: 0.5rem !important;
+    background-color: #343a40 !important;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
 }
 
-.btn-outline-secondary.dark-mode:hover, 
-.modal-footer .btn-secondary.dark-mode:hover {
-    background-color: #6c757d !important;
-    border-color: #6c757d !important;
-    color: #ffffff !important;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+body .mb-0 {
+    margin-bottom: 0 !important;
+    color: #212529 !important;
+}
+
+body.dark-mode .mb-0 {
+    margin-bottom: 0 !important;
+    color: #f8f9fa !important;
 }
 
 /* Input, Textarea, Select Fields */
@@ -163,217 +196,4 @@ select.dark-mode {
     padding: 10px;
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* Ensure Main Content Area and Containers */
-/* Light Mode */
-main, .container, .row {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-main.dark-mode, 
-.container.dark-mode, 
-.row.dark-mode {
-    background-color: #212529 !important;
-    color: #f8f9fa !important;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Tables */
-/* Light Mode */
-body table, body .table {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    border-color: #dee2e6 !important;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-body.dark-mode table, 
-body.dark-mode .table {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
-    border-color: #454d55 !important;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Table Cells and Headers */
-/* Light Mode */
-body .table th, 
-body .table td, 
-body table th, 
-body table td {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    border-color: #dee2e6 !important;
-    padding: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-body.dark-mode .table th, 
-body.dark-mode .table td, 
-body.dark-mode table th, 
-body.dark-mode table td {
-    background-color: #454d55 !important;
-    color: #f8f9fa !important;
-    border-color: #6c757d !important;
-    padding: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Table Headers */
-/* Light Mode */
-body .table th {
-    background-color: #e9ecef !important;
-    color: #212529 !important;
-    font-weight: bold;
-    padding: 10px;
-}
-
-/* Dark Mode */
-body.dark-mode .table th {
-    background-color: #495057 !important;
-    color: #f8f9fa !important;
-    font-weight: bold;
-    padding: 10px;
-}
-
-/* Table with 'table-light' class */
-/* Light Mode */
-body .table-light {
-    background-color: #f8f9fa !important;
-    color: #212529 !important;
-}
-
-/* Dark Mode */
-body.dark-mode .table-light {
-    background-color: #495057 !important;
-    color: #f8f9fa !important;
-}
-
-/* Hover Effect for Rows */
-/* Light Mode */
-body .table-hover tbody tr:hover {
-    background-color: #f1f1f1 !important;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-body.dark-mode .table-hover tbody tr:hover {
-    background-color: #495057 !important;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Modals */
-/* Light Mode */
-body .modal-content {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Dark Mode */
-body.dark-mode .modal-content {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Modal Headers and Footers */
-/* Light Mode */
-body .modal-header, 
-body .modal-footer {
-    background-color: #e9ecef !important;
-    border-bottom: 1px solid #dee2e6 !important;
-    color: #212529 !important;
-    border-radius: 8px;
-    padding: 15px;
-}
-
-/* Dark Mode */
-body.dark-mode .modal-header, 
-body.dark-mode .modal-footer {
-    background-color: #3d3d3d !important;
-    border-bottom: 1px solid #454d55 !important;
-    color: #f8f9fa !important;
-    border-radius: 8px;
-    padding: 15px;
-}
-
-/* Modal Titles */
-body .modal-header .modal-title {
-    color: #212529 !important;
-    font-weight: bold;
-}
-
-/* Dark Mode */
-body.dark-mode .modal-header .modal-title {
-    color: #f8f9fa !important;
-    font-weight: bold;
-}
-
-/* Close Button in Modals */
-body .btn-close {
-    filter: invert(0); /* Default (non-dark) */
-    transition: filter 0.3s ease-in-out;
-}
-
-/* Dark Mode Close Button */
-body.dark-mode .btn-close {
-    filter: invert(1); /* Makes the close button visible in dark mode */
-    transition: filter 0.3s ease-in-out;
-}
-
-/* Card Body */
-/* Light Mode */
-body .card-body {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-}
-
-/* Dark Mode */
-body.dark-mode .card-body {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
-    padding: 20px;
-}
-
-/* Padding and Margin Adjustments */
-/* Light Mode */
-body .p-2 {
-    padding: 0.5rem !important;
-    background-color: #ffffff !important;
-}
-
-body .mb-0 {
-    margin-bottom: 0 !important;
-    color: #212529 !important;
-}
-
-/* Dark Mode */
-body.dark-mode .p-2 {
-    padding: 0.5rem !important;
-    background-color: #343a40 !important;
-}
-
-body.dark-mode .mb-0 {
-    margin-bottom: 0 !important;
-    color: #f8f9fa !important;
 }
