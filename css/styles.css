@@ -197,3 +197,42 @@ select.dark-mode {
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
+
+/* Styling for the View-on-site headers */
+h6 a {
+    font-weight: bold;
+    color: #007bff; /* A modern blue for interactivity */
+    text-decoration: none; /* No underline by default */
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Hover effect to make the link more interactive */
+h6 a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Adding an icon to emphasize the 'View on-site' */
+h6 a::before {
+    content: "\f06e"; /* Font Awesome or Bootstrap icon code for eye or link */
+    font-family: "Font Awesome 5 Free"; /* Ensure FontAwesome or Bootstrap Icons are loaded */
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Dark Mode adjustments */
+body.dark-mode h6 a {
+    color: #66b2ff; /* Lighter blue in dark mode */
+}
+
+body.dark-mode h6 a:hover {
+    color: #3399ff; /* Darker blue on hover in dark mode */
+}
+
+/* Adjust padding or margins to ensure better spacing */
+h6 {
+    padding: 10px 0; /* Add some vertical spacing */
+}
