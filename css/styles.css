@@ -4,82 +4,105 @@ body.dark-mode {
     color: #f8f9fa !important;
 }
 
-/* Navbar */
-.navbar.dark-mode, .card-header.dark-mode, .card.dark-mode, .table.dark-mode, .modal-body, .modal-content {
+/* Navbar, Card Headers, Tables, Modals */
+.navbar.dark-mode, 
+.card-header.dark-mode, 
+.card.dark-mode, 
+.table.dark-mode, 
+.modal-body, 
+.modal-content {
     background-color: #343a40 !important;
     color: #f8f9fa !important;
 }
 
-.card.dark-mode, .table.dark-mode, .table-bordered th, .table-bordered td, .modal-header, .modal-footer, .table tbody tr {
+.card.dark-mode, 
+.table.dark-mode, 
+.table-bordered th, 
+.table-bordered td, 
+.modal-header, 
+.modal-footer, 
+.table tbody tr {
     border-color: #454d55 !important;
 }
 
 /* Buttons */
-.btn-outline-secondary.dark-mode, .modal-footer .btn-secondary {
+.btn-outline-secondary.dark-mode, 
+.modal-footer .btn-secondary {
     color: #f8f9fa !important;
     border-color: #f8f9fa !important;
     background-color: #6c757d !important;
 }
 
-.btn-outline-secondary.dark-mode:hover, .modal-footer .btn-secondary:hover {
+.btn-outline-secondary.dark-mode:hover, 
+.modal-footer .btn-secondary:hover {
     background-color: #6c757d !important;
     border-color: #6c757d !important;
 }
 
 /* Input, Textarea, Select Fields */
-input.dark-mode, textarea.dark-mode, select.dark-mode {
+input.dark-mode, 
+textarea.dark-mode, 
+select.dark-mode {
     background-color: #454d55 !important;
     color: #f8f9fa !important;
     border-color: #6c757d !important;
 }
 
 /* Ensure Main Content Area and Containers */
-main.dark-mode, .container.dark-mode, .row.dark-mode {
+main.dark-mode, 
+.container.dark-mode, 
+.row.dark-mode {
     background-color: #212529 !important;
     color: #f8f9fa !important;
 }
 
 /* Tables */
-body.dark-mode table, body.dark-mode .table {
-    background-color: #343a40; /* Dark background for tables */
-    color: #f8f9fa; /* Light text for tables */
-    border-color: #454d55; /* Darker border for the table */
+body.dark-mode table, 
+body.dark-mode .table {
+    background-color: #343a40 !important; /* Dark background for tables */
+    color: #f8f9fa !important; /* Light text for tables */
+    border-color: #454d55 !important; /* Darker border for the table */
 }
 
-body.dark-mode .table th, body.dark-mode .table td, body.dark-mode table th, body.dark-mode table td {
-    background-color: #454d55; /* Darker background for table cells */
-    color: #f8f9fa; /* Light text */
-    border-color: #6c757d; /* Slightly lighter border for table cells */
+body.dark-mode .table th, 
+body.dark-mode .table td, 
+body.dark-mode table th, 
+body.dark-mode table td {
+    background-color: #454d55 !important; /* Darker background for table cells */
+    color: #f8f9fa !important; /* Light text */
+    border-color: #6c757d !important; /* Slightly lighter border for table cells */
 }
 
 body.dark-mode .table th {
-    background-color: #495057; /* Slightly lighter background for table headers */
-    color: #f8f9fa; /* Light text for table headers */
+    background-color: #495057 !important; /* Slightly lighter background for table headers */
+    color: #f8f9fa !important; /* Light text for table headers */
 }
 
+/* Table with 'table-light' class */
 body.dark-mode .table-light {
-    background-color: #495057; /* Darker table light headers */
-    color: #f8f9fa;
+    background-color: #495057 !important; /* Darker table light headers */
+    color: #f8f9fa !important;
 }
 
+/* Hover Effect for Rows */
 body.dark-mode .table-hover tbody tr:hover {
-    background-color: #495057; /* Hover effect for rows in dark mode */
+    background-color: #495057 !important; /* Hover effect for rows in dark mode */
 }
 
 /* Modals */
 body.dark-mode .modal-content {
-    background-color: #343a40; /* Dark background */
-    color: #f8f9fa; /* Light text */
+    background-color: #343a40 !important; /* Dark background */
+    color: #f8f9fa !important; /* Light text */
 }
 
 body.dark-mode .modal-header, 
 body.dark-mode .modal-footer {
-    background-color: #3d3d3d; /* Slightly different dark background for header/footer */
-    border-bottom: 1px solid #454d55; /* Darker border color */
+    background-color: #3d3d3d !important; /* Slightly different dark background for header/footer */
+    border-bottom: 1px solid #454d55 !important; /* Darker border color */
 }
 
 body.dark-mode .modal-header .modal-title {
-    color: #f8f9fa; /* Light text for title */
+    color: #f8f9fa !important; /* Light text for title */
 }
 
 body.dark-mode .btn-close {
