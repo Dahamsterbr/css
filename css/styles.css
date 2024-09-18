@@ -1,3 +1,9 @@
+/* General Light Mode for Body (Non-Dark Mode) */
+body {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
 /* General Dark Mode for Body */
 body.dark-mode {
     background-color: #212529 !important;
@@ -5,6 +11,13 @@ body.dark-mode {
 }
 
 /* Navbar, Card Headers, Cards, Tables, Modals */
+/* Light Mode */
+.navbar, .card-header, .card, .table, .modal-body, .modal-content {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 .navbar.dark-mode, 
 .card-header.dark-mode, 
 .card.dark-mode, 
@@ -18,6 +31,17 @@ body.dark-mode {
     color: #f8f9fa !important;
 }
 
+.card, 
+.table, 
+.table-bordered th, 
+.table-bordered td, 
+.modal-header, 
+.modal-footer, 
+.table tbody tr {
+    border-color: #dee2e6 !important; /* Light mode default border */
+}
+
+/* Dark Mode Borders */
 .card.dark-mode, 
 .table.dark-mode, 
 .table-bordered th, 
@@ -29,6 +53,19 @@ body.dark-mode {
 }
 
 /* Buttons */
+/* Light Mode */
+.btn-outline-secondary, .modal-footer .btn-secondary {
+    color: #212529 !important;
+    border-color: #6c757d !important;
+    background-color: #ffffff !important;
+}
+
+.btn-outline-secondary:hover, .modal-footer .btn-secondary:hover {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+}
+
+/* Dark Mode Buttons */
 .btn-outline-secondary.dark-mode, 
 .modal-footer .btn-secondary {
     color: #f8f9fa !important;
@@ -43,6 +80,14 @@ body.dark-mode {
 }
 
 /* Input, Textarea, Select Fields */
+/* Light Mode */
+input, textarea, select {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #ced4da !important;
+}
+
+/* Dark Mode */
 input.dark-mode, 
 textarea.dark-mode, 
 select.dark-mode {
@@ -52,6 +97,13 @@ select.dark-mode {
 }
 
 /* Ensure Main Content Area and Containers */
+/* Light Mode */
+main, .container, .row {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 main.dark-mode, 
 .container.dark-mode, 
 .row.dark-mode {
@@ -60,71 +112,160 @@ main.dark-mode,
 }
 
 /* Tables */
-body.dark-mode table, 
-body.dark-mode .table {
-    background-color: #343a40 !important; /* Dark background for tables */
-    color: #f8f9fa !important; /* Light text for tables */
-    border-color: #454d55 !important; /* Darker border for the table */
+/* Light Mode */
+body table, body .table {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #dee2e6 !important;
 }
 
+/* Dark Mode */
+body.dark-mode table, 
+body.dark-mode .table {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border-color: #454d55 !important;
+}
+
+/* Table Cells and Headers */
+/* Light Mode */
+body .table th, 
+body .table td, 
+body table th, 
+body table td {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #dee2e6 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .table th, 
 body.dark-mode .table td, 
 body.dark-mode table th, 
 body.dark-mode table td {
-    background-color: #454d55 !important; /* Darker background for table cells */
-    color: #f8f9fa !important; /* Light text */
-    border-color: #6c757d !important; /* Slightly lighter border for table cells */
+    background-color: #454d55 !important;
+    color: #f8f9fa !important;
+    border-color: #6c757d !important;
 }
 
+/* Table Headers */
+/* Light Mode */
+body .table th {
+    background-color: #e9ecef !important;
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .table th {
-    background-color: #495057 !important; /* Slightly lighter background for table headers */
-    color: #f8f9fa !important; /* Light text for table headers */
+    background-color: #495057 !important;
+    color: #f8f9fa !important;
 }
 
 /* Table with 'table-light' class */
+/* Light Mode */
+body .table-light {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .table-light {
-    background-color: #495057 !important; /* Darker table light headers */
+    background-color: #495057 !important;
     color: #f8f9fa !important;
 }
 
 /* Hover Effect for Rows */
+/* Light Mode */
+body .table-hover tbody tr:hover {
+    background-color: #f1f1f1 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .table-hover tbody tr:hover {
-    background-color: #495057 !important; /* Hover effect for rows in dark mode */
+    background-color: #495057 !important;
 }
 
 /* Modals */
-body.dark-mode .modal-content {
-    background-color: #343a40 !important; /* Dark background */
-    color: #f8f9fa !important; /* Light text */
+/* Light Mode */
+body .modal-content {
+    background-color: #ffffff !important;
+    color: #212529 !important;
 }
 
+/* Dark Mode */
+body.dark-mode .modal-content {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+}
+
+/* Modal Headers and Footers */
+/* Light Mode */
+body .modal-header, 
+body .modal-footer {
+    background-color: #e9ecef !important;
+    border-bottom: 1px solid #dee2e6 !important;
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .modal-header, 
 body.dark-mode .modal-footer {
-    background-color: #3d3d3d !important; /* Slightly different dark background for header/footer */
-    border-bottom: 1px solid #454d55 !important; /* Darker border color */
+    background-color: #3d3d3d !important;
+    border-bottom: 1px solid #454d55 !important;
 }
 
+/* Modal Titles */
+body .modal-header .modal-title {
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .modal-header .modal-title {
-    color: #f8f9fa !important; /* Light text for title */
+    color: #f8f9fa !important;
 }
 
+/* Close Button in Modals */
+body .btn-close {
+    filter: invert(0); /* Default (non-dark) */
+}
+
+/* Dark Mode Close Button */
 body.dark-mode .btn-close {
     filter: invert(1); /* Makes the close button visible in dark mode */
 }
 
 /* Card Body */
-body.dark-mode .card-body {
-    background-color: #343a40 !important; /* Dark background for card body */
-    color: #f8f9fa !important; /* Light text for card body */
+/* Light Mode */
+body .card-body {
+    background-color: #ffffff !important;
+    color: #212529 !important;
 }
 
-/* Padding and Margin Adjustments for Dark Mode */
+/* Dark Mode */
+body.dark-mode .card-body {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+}
+
+/* Padding and Margin Adjustments */
+/* Light Mode */
+body .p-2 {
+    padding: 0.5rem !important;
+    background-color: #ffffff !important;
+}
+
+body .mb-0 {
+    margin-bottom: 0 !important;
+    color: #212529 !important;
+}
+
+/* Dark Mode */
 body.dark-mode .p-2 {
-    padding: 0.5rem !important; /* Adjust padding for dark mode */
-    background-color: #343a40 !important; /* Ensure padding area has dark background */
+    padding: 0.5rem !important;
+    background-color: #343a40 !important;
 }
 
 body.dark-mode .mb-0 {
-    margin-bottom: 0 !important; /* Ensure margin behaves correctly in dark mode */
-    color: #f8f9fa !important; /* Ensure light text for elements with mb-0 */
+    margin-bottom: 0 !important;
+    color: #f8f9fa !important;
 }
