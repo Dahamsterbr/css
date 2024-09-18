@@ -23,7 +23,22 @@ body.dark-mode {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
+/* Light Mode for Modal */
+body .modal-content, body #modal-body-content {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+/* Dark Mode for Modal */
+body.dark-mode .modal-content, 
+body.dark-mode #modal-body-content {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 /* Dark Mode */
 .navbar.dark-mode, 
 .card-header.dark-mode, 
