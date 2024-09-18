@@ -44,6 +44,7 @@ body.dark-mode .container.mt-3 {
     transition: all 0.3s ease-in-out;
 }
 
+/* Dark Mode */
 body.dark-mode .navbar, 
 body.dark-mode .card-header, 
 body.dark-mode .card, 
@@ -56,6 +57,81 @@ body.dark-mode #modal-body-content {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
+/* Navbar Brand (Modernized) */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #007bff !important; /* Light blue */
+    transition: color 0.3s ease-in-out;
+}
+
+body.dark-mode .navbar-brand {
+    color: #66b2ff !important; /* Lighter blue for dark mode */
+}
+
+/* Navbar Brand Hover Effect */
+.navbar-brand:hover {
+    color: #0056b3 !important; /* Darker blue on hover */
+}
+
+body.dark-mode .navbar-brand:hover {
+    color: #3399ff !important; /* Slightly darker blue on hover in dark mode */
+}
+
+/* Navbar Items */
+.nav-item {
+    margin-right: 15px; /* Spacing between nav items */
+}
+
+/* Navbar Links */
+.nav-link {
+    font-size: 1rem;
+    color: #212529 !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Links Hover */
+.nav-link:hover {
+    background-color: #f1f1f1 !important; /* Subtle background on hover */
+    color: #007bff !important;
+    text-decoration: none; /* No underline */
+}
+
+body.dark-mode .nav-link {
+    color: #f8f9fa !important;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .nav-link:hover {
+    background-color: #495057 !important; /* Darker background on hover */
+    color: #66b2ff !important; /* Light blue text */
+}
+
+/* Active Navbar Link */
+.nav-link.active {
+    background-color: #007bff !important;
+    color: #ffffff !important;
+    border-radius: 5px;
+}
+
+body.dark-mode .nav-link.active {
+    background-color: #66b2ff !important;
+    color: #212529 !important;
+}
+
+/* Spacing Adjustments for Modern Look */
+.navbar {
+    padding: 10px 20px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 /* Highlight specific elements on hover */
 .col-12:hover, h6:hover {
