@@ -52,3 +52,21 @@ main.dark-mode {
 }
 
 /* Add dark-mode for any additional elements as necessary */
+/* Dark Mode for containers and rows */
+.container.dark-mode, .row.dark-mode {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+}
+
+/* Dark Mode for card-header */
+.card-header.dark-mode {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+}
+
+/* Dark Mode for table headers and cells */
+.table.dark-mode th, .table.dark-mode td {
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border-color: #454d55 !important;
+}
