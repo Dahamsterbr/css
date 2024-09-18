@@ -70,3 +70,53 @@ main.dark-mode {
     color: #f8f9fa !important;
     border-color: #454d55 !important;
 }
+
+/* Dark Mode for Modal */
+body.dark-mode .modal-content {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+body.dark-mode .modal-header, 
+body.dark-mode .modal-footer {
+    background-color: #3d3d3d; /* Slightly different dark background for header/footer */
+    border-bottom: 1px solid #454d55; /* Darker border color */
+}
+
+body.dark-mode .modal-header .modal-title {
+    color: #f8f9fa; /* Light text for title */
+}
+
+body.dark-mode .modal-body {
+    background-color: #343a40; /* Same dark background as modal content */
+    color: #f8f9fa; /* Light text for body */
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1); /* Makes the close button visible in dark mode */
+}
+
+body.dark-mode .modal-footer .btn-secondary {
+    background-color: #6c757d; /* Dark secondary button */
+    border-color: #6c757d; /* Matching border color */
+    color: #f8f9fa; /* Light text on button */
+}
+
+/* Dark Mode for Table Elements */
+body.dark-mode table {
+    background-color: #343a40; /* Dark background for tables */
+    color: #f8f9fa; /* Light text for tables */
+    border-color: #454d55; /* Darker border for the table */
+}
+
+body.dark-mode table th, 
+body.dark-mode table td {
+    background-color: #454d55; /* Darker background for table cells */
+    color: #f8f9fa; /* Light text */
+    border-color: #6c757d; /* Slightly lighter border for table cells */
+}
+
+body.dark-mode table th {
+    background-color: #495057; /* Slightly lighter background for table headers */
+    color: #f8f9fa; /* Light text for table headers */
+}
