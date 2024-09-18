@@ -4,10 +4,13 @@ body.dark-mode {
     color: #f8f9fa !important;
 }
 
-/* Navbar, Card Headers, Tables, Modals */
+/* Navbar, Card Headers, Cards, Tables, Modals */
 .navbar.dark-mode, 
 .card-header.dark-mode, 
 .card.dark-mode, 
+.card-body.dark-mode, 
+.p-2.dark-mode, 
+.mb-0.dark-mode, 
 .table.dark-mode, 
 .modal-body, 
 .modal-content {
@@ -107,4 +110,21 @@ body.dark-mode .modal-header .modal-title {
 
 body.dark-mode .btn-close {
     filter: invert(1); /* Makes the close button visible in dark mode */
+}
+
+/* Card Body */
+body.dark-mode .card-body {
+    background-color: #343a40 !important; /* Dark background for card body */
+    color: #f8f9fa !important; /* Light text for card body */
+}
+
+/* Padding and Margin Adjustments for Dark Mode */
+body.dark-mode .p-2 {
+    padding: 0.5rem !important; /* Adjust padding for dark mode */
+    background-color: #343a40 !important; /* Ensure padding area has dark background */
+}
+
+body.dark-mode .mb-0 {
+    margin-bottom: 0 !important; /* Ensure margin behaves correctly in dark mode */
+    color: #f8f9fa !important; /* Ensure light text for elements with mb-0 */
 }
