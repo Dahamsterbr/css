@@ -1,60 +1,54 @@
-/* Light Theme (Default) */
-body {
-    background-color: #f8f9fa;
-    color: #212529;
-}
-
-.navbar {
-    background-color: #ffffff;
-}
-
-.card {
-    background-color: #ffffff;
-    border-color: #dee2e6;
-}
-
-.table {
-    background-color: #ffffff;
-}
-
-input, textarea, select {
-    background-color: #ffffff;
-    color: #212529;
-}
-
-/* Dark Theme */
+/* General Dark Mode for body */
 body.dark-mode {
-    background-color: #212529;
-    color: #f8f9fa;
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
 }
 
+/* Navbar */
 .navbar.dark-mode {
     background-color: #343a40 !important;
 }
 
+/* Cards */
 .card.dark-mode {
-    background-color: #343a40;
-    color: #f8f9fa;
-    border-color: #454d55;
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border-color: #454d55 !important;
 }
 
+/* Tables */
 .table.dark-mode {
-    background-color: #343a40;
-    color: #f8f9fa;
-    border-color: #454d55;
+    background-color: #343a40 !important;
+    color: #f8f9fa !important;
+    border-color: #454d55 !important;
 }
 
+.table.dark-mode th, .table.dark-mode td {
+    border-color: #454d55 !important;
+}
+
+/* Input, Textarea, Select fields */
 input.dark-mode, textarea.dark-mode, select.dark-mode {
-    background-color: #454d55;
-    color: #f8f9fa;
+    background-color: #454d55 !important;
+    color: #f8f9fa !important;
+    border-color: #6c757d !important;
 }
 
+/* Buttons */
 .btn-outline-secondary.dark-mode {
-    color: #f8f9fa;
-    border-color: #f8f9fa;
+    color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
 }
 
 .btn-outline-secondary.dark-mode:hover {
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
 }
+
+/* Ensure main content area gets dark mode */
+main.dark-mode {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+}
+
+/* Add dark-mode for any additional elements as necessary */
