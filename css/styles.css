@@ -1,46 +1,48 @@
 /* General Light Mode for Body */
 body {
-    background-color: #f5f6fa !important;
-    color: #212529 !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    background-color: #f1f3f5 !important; /* Softer background */
+    color: #1c1e21 !important; /* Slightly darker for contrast */
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    line-height: 1.6; /* Better readability */
+    font-size: 16px; /* Slightly larger for accessibility */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* General Dark Mode for Body */
 body.dark-mode {
-    background-color: #1d1f24 !important;
-    color: #f8f9fa !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    background-color: #181a1e !important;
+    color: #e9ecef !important;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 /* Container and Cards */
 body .container, body .container.mt-3 {
-    background-color: #ffffff !important;
-    color: #212529 !important;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff !important; /* Crisp white for light mode */
+    color: #1c1e21 !important;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06); /* Subtle modern shadow */
     transition: all 0.3s ease-in-out;
 }
 
 body.dark-mode .container, 
 body.dark-mode .container.mt-3 {
-    background-color: #343a40 !important;
-    color: #f8f9fa !important;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #212529 !important; /* Dark gray for dark mode */
+    color: #e9ecef !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35); /* Enhanced shadow for dark mode */
 }
 
 /* Navbar, Cards, and Tables */
 .navbar, .card-header, .card, .table, .modal-body, .modal-content, #modal-body-content {
     background-color: #ffffff !important;
-    color: #212529 !important;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #1c1e21 !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Modern shadow */
     transition: all 0.3s ease-in-out;
 }
 
@@ -52,90 +54,78 @@ body.dark-mode .table,
 body.dark-mode .modal-body, 
 body.dark-mode .modal-content, 
 body.dark-mode #modal-body-content {
-    background-color: #2b2e33 !important;
-    color: #f8f9fa !important;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #2b2f36 !important;
+    color: #e9ecef !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Navbar Brand (Modernized) */
+/* Navbar Brand */
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #007bff !important; /* Light blue */
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #007bff !important;
     transition: color 0.3s ease-in-out;
 }
 
 body.dark-mode .navbar-brand {
-    color: #66b2ff !important; /* Lighter blue for dark mode */
+    color: #66b2ff !important;
 }
 
 /* Navbar Brand Hover Effect */
 .navbar-brand:hover {
-    color: #0056b3 !important; /* Darker blue on hover */
+    color: #0056b3 !important;
 }
 
 body.dark-mode .navbar-brand:hover {
-    color: #3399ff !important; /* Slightly darker blue on hover in dark mode */
-}
-
-/* Navbar Items */
-.nav-item {
-    margin-right: 15px; /* Spacing between nav items */
+    color: #3399ff !important;
 }
 
 /* Navbar Links */
 .nav-link {
     font-size: 1rem;
-    color: #212529 !important;
-    padding: 10px 15px;
-    border-radius: 5px;
+    color: #1c1e21 !important;
+    padding: 10px 20px;
+    border-radius: 6px;
     transition: all 0.3s ease-in-out;
 }
 
 /* Navbar Links Hover */
 .nav-link:hover {
-    background-color: #f1f1f1 !important; /* Subtle background on hover */
+    background-color: #e9ecef !important;
     color: #007bff !important;
-    text-decoration: none; /* No underline */
+    text-decoration: none;
 }
 
 body.dark-mode .nav-link {
-    color: #f8f9fa !important;
-    transition: all 0.3s ease-in-out;
+    color: #e9ecef !important;
 }
 
 body.dark-mode .nav-link:hover {
-    background-color: #495057 !important; /* Darker background on hover */
-    color: #66b2ff !important; /* Light blue text */
+    background-color: #495057 !important;
+    color: #66b2ff !important;
 }
 
 /* Active Navbar Link */
 .nav-link.active {
     background-color: #007bff !important;
     color: #ffffff !important;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 body.dark-mode .nav-link.active {
     background-color: #66b2ff !important;
-    color: #212529 !important;
+    color: #1c1e21 !important;
 }
 
-/* Spacing Adjustments for Modern Look */
+/* Modernized Navbar */
 .navbar {
-    padding: 10px 20px;
+    padding: 12px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
 }
 
-.nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
-/* Highlight specific elements on hover */
+/* Hover Highlights */
 .col-12:hover, h6:hover {
-    background-color: #e9ecef !important;
+    background-color: #f8f9fa !important;
     color: #495057 !important;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -143,172 +133,106 @@ body.dark-mode .nav-link.active {
 
 body.dark-mode .col-12:hover, 
 body.dark-mode h6:hover {
-    background-color: #495057 !important;
-    color: #f8f9fa !important;
-    transition: all 0.3s ease-in-out;
+    background-color: #343a40 !important;
+    color: #e9ecef !important;
 }
 
 /* Table Styling */
 .table th, .table td {
-    padding: 10px;
+    padding: 12px;
     background-color: #ffffff !important;
-    color: #212529 !important;
+    color: #1c1e21 !important;
     border-color: #dee2e6 !important;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: all 0.3s ease-in-out;
 }
 
 body.dark-mode .table th, 
 body.dark-mode .table td {
-    background-color: #454d55 !important;
-    color: #f8f9fa !important;
-    border-color: #6c757d !important;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    background-color: #343a40 !important;
+    color: #e9ecef !important;
+    border-color: #495057 !important;
 }
 
 /* Table Headers */
 .table th {
-    background-color: #e9ecef !important;
-    color: #212529 !important;
-    font-weight: bold;
+    background-color: #f8f9fa !important;
+    color: #1c1e21 !important;
+    font-weight: 600;
 }
 
 body.dark-mode .table th {
     background-color: #495057 !important;
-    color: #f8f9fa !important;
-    font-weight: bold;
-}
-
-/* Devices Table in Cards */
-.card-body .device-table {
-    background-color: #ffffff !important;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-body.dark-mode .card-body .device-table {
-    background-color: #454d55 !important;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-    margin-top: 15px;
-    transition: all 0.3s ease-in-out;
+    color: #e9ecef !important;
+    font-weight: 600;
 }
 
 /* Table Hover Effect */
 .table-hover tbody tr:hover {
-    background-color: #f1f1f1 !important;
+    background-color: #e9ecef !important;
     transition: all 0.3s ease-in-out;
 }
 
 body.dark-mode .table-hover tbody tr:hover {
     background-color: #495057 !important;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Modern Card and Shadow Effects */
-.card {
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
-
-body.dark-mode .card {
-    background-color: #343a40 !important;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Padding and Margin Adjustments */
-body .p-2 {
-    padding: 0.5rem !important;
-    background-color: #ffffff !important;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-
-body.dark-mode .p-2 {
-    padding: 0.5rem !important;
-    background-color: #343a40 !important;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-
-body .mb-0 {
-    margin-bottom: 0 !important;
-    color: #212529 !important;
-}
-
-body.dark-mode .mb-0 {
-    margin-bottom: 0 !important;
-    color: #f8f9fa !important;
 }
 
 /* Input, Textarea, Select Fields */
-/* Light Mode */
 input, textarea, select {
     background-color: #ffffff !important;
-    color: #212529 !important;
+    color: #1c1e21 !important;
     border-color: #ced4da !important;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 6px;
+    padding: 12px;
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Dark Mode */
-input.dark-mode, 
-textarea.dark-mode, 
-select.dark-mode {
-    background-color: #454d55 !important;
-    color: #f8f9fa !important;
-    border-color: #6c757d !important;
-    border-radius: 5px;
-    padding: 10px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Light blue focus shadow */
 }
 
-/* Styling for the View-on-site headers */
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select {
+    background-color: #495057 !important;
+    color: #e9ecef !important;
+    border-color: #6c757d !important;
+}
+
+/* View-on-site links */
 h6 a {
-    font-weight: bold;
-    color: #007bff; /* A modern blue for interactivity */
-    text-decoration: none; /* No underline by default */
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
     display: inline-flex;
     align-items: center;
 }
 
-/* Hover effect to make the link more interactive */
 h6 a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: underline; /* Underline on hover for emphasis */
+    color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Adding an icon to emphasize the 'View on-site' */
 h6 a::before {
-    content: "\f06e"; /* Font Awesome or Bootstrap icon code for eye or link */
-    font-family: "Font Awesome 5 Free"; /* Ensure FontAwesome or Bootstrap Icons are loaded */
+    content: "\f06e";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    display: inline-block;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 
-/* Dark Mode adjustments */
 body.dark-mode h6 a {
-    color: #66b2ff; /* Lighter blue in dark mode */
+    color: #66b2ff;
 }
 
 body.dark-mode h6 a:hover {
-    color: #3399ff; /* Darker blue on hover in dark mode */
+    color: #3399ff;
 }
 
-/* Adjust padding or margins to ensure better spacing */
+/* Misc Adjustments for Better Spacing */
 h6 {
-    padding: 10px 0; /* Add some vertical spacing */
+    padding: 12px 0;
 }
