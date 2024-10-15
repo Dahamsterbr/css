@@ -1,34 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var veldTypeSelect = document.getElementById('id_veld_type');
+document.addEventListener("DOMContentLoaded", function () {
+    const veldTypeField = document.getElementById("id_veld_type");
+    const booleanField = document.getElementById("id_default_boolean").parentElement;
+    const integerField = document.getElementById("id_default_integer").parentElement;
+    const textField = document.getElementById("id_default_text").parentElement;
 
-    function toggleFields() {
-        var veldType = veldTypeSelect.value;
-        var booleanField = document.getElementById('id_default_boolean').closest('.form-row');
-        var integerField = document.getElementById('id_default_integer').closest('.form-row');
-        var textField = document.getElementById('id_default_text').closest('.form-row');
+    function updateFields() {
+        const veldType = veldTypeField.value;
 
-        // Verberg of toon de velden afhankelijk van het geselecteerde veld_type
-        if (veldType === 'boolean') {
-            booleanField.style.display = '';
-            integerField.style.display = 'none';
-            textField.style.display = 'none';
-        } else if (veldType === 'integer') {
-            booleanField.style.display = 'none';
-            integerField.style.display = '';
-            textField.style.display = 'none';
-        } else if (veldType === 'text') {
-            booleanField.style.display = 'none';
-            integerField.style.display = 'none';
-            textField.style.display = '';
+        // Toon of verberg velden afhankelijk van het gekozen veld_type
+        if (veldType === "boolean") {
+            booleanField.style.display = "block";
+            integerField.style.display = "none";
+            textField.style.display = "none";
+        } else if (veldType === "integer") {
+            booleanField.style.display = "none";
+            integerField.style.display = "block";
+            textField.style.display = "none";
+        } else if (veldType === "text") {
+            booleanField.style.display = "none";
+            integerField.style.display = "none";
+            textField.style.display = "block";
         } else {
-            // Verberg alle velden als er geen veld_type is geselecteerd
-            booleanField.style.display = 'none';
-            integerField.style.display = 'none';
-            textField.style.display = 'none';
+            booleanField.style.display = "none";
+            integerField.style.display = "none";
+            textField.style.display = "none";
         }
     }
 
-    // Roep de functie op bij het laden van de pagina en bij wijziging van het veld_type
-    toggleFields();
-    veldTypeSelect.addEventListener('change', toggleFields);
+    veldTypeField.addEventListener("change", updateFields);
+    updateFields();  // Initieel veldtype controleren
 });
