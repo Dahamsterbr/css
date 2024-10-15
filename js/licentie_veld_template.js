@@ -9,21 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Toon of verberg velden afhankelijk van het gekozen veld_type
         if (veldType === "boolean") {
-            booleanField.style.display = "block";
-            integerField.style.display = "none";
-            textField.style.display = "none";
+            field-default_boolean.style.display = "block";
+            field-default_integer.style.display = "none";
+            field-default_text.style.display = "none";
         } else if (veldType === "integer") {
-            booleanField.style.display = "none";
-            integerField.style.display = "block";
-            textField.style.display = "none";
+            field-default_boolean.style.display = "none";
+            field-default_integer.style.display = "block";
+            field-default_text.style.display = "none";
         } else if (veldType === "text") {
-            booleanField.style.display = "none";
-            integerField.style.display = "none";
-            textField.style.display = "block";
+            field-default_boolean.style.display = "none";
+            field-default_integer.style.display = "none";
+            field-default_text.style.display = "block";
         } else {
-            booleanField.style.display = "none";
-            integerField.style.display = "none";
-            textField.style.display = "none";
+            field-default_boolean.style.display = "none";
+            field-default_integer.style.display = "none";
+            field-default_text.style.display = "none";
         }
     }
 
