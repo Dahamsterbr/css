@@ -8,17 +8,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const integerField = document.getElementById("id_default_integer");
     const textField = document.getElementById("id_default_text");
 
+    const groupField = document.getElementById("id_group");  // New group field
+    const groupFieldContainer = document.querySelector(".field-group");  // Group container
+
     function updateFields() {
         const veldType = veldTypeField.value;
 
-        // Toon of verberg de veldcontainers en verwijder de hidden class
+        // Show or hide the group field if needed (optional)
+        if (groupField) {
+            groupFieldContainer.style.display = "block";
+        }
+
+        // Show or hide field containers based on veld_type
         if (veldType === "boolean") {
             booleanFieldContainer.style.display = "block";
             booleanFieldContainer.classList.remove("hidden");
             integerFieldContainer.style.display = "none";
             textFieldContainer.style.display = "none";
 
-            // Zorg ervoor dat de juiste veldtypen zichtbaar zijn
+            // Ensure the correct field types are visible
             booleanField.type = "checkbox";
             integerField.type = "hidden";
             textField.type = "hidden";
@@ -28,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
             integerFieldContainer.classList.remove("hidden");
             textFieldContainer.style.display = "none";
 
-            // Zorg ervoor dat de juiste veldtypen zichtbaar zijn
             booleanField.type = "hidden";
             integerField.type = "number";
             textField.type = "hidden";
@@ -38,17 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
             textFieldContainer.style.display = "block";
             textFieldContainer.classList.remove("hidden");
 
-            // Zorg ervoor dat de juiste veldtypen zichtbaar zijn
             booleanField.type = "hidden";
             integerField.type = "hidden";
             textField.type = "text";
         } else {
-            // Verberg alle velden als er geen veld_type is gekozen
+            // Hide all fields if no veld_type is chosen
             booleanFieldContainer.style.display = "none";
             integerFieldContainer.style.display = "none";
             textFieldContainer.style.display = "none";
 
-            // Maak alle velden hidden als er geen veldtype is gekozen
             booleanField.type = "hidden";
             integerField.type = "hidden";
             textField.type = "hidden";
@@ -56,5 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     veldTypeField.addEventListener("change", updateFields);
-    updateFields();  // Initieel veldtype controleren
+    updateFields();  // Check the field type initially
 });
