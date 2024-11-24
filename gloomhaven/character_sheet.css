@@ -1,25 +1,34 @@
+/* General Form Styling */
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 20px auto;
     font-family: Arial, sans-serif;
 }
 
 form div {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 form label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #555;
 }
 
 form input, form textarea, form select {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 form input[type="checkbox"] {
@@ -30,10 +39,12 @@ form button {
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 20px;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
@@ -44,7 +55,7 @@ form button:hover {
 .character-sheet {
     font-family: 'Arial', sans-serif;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -59,6 +70,7 @@ form button:hover {
     margin-top: 20px;
 }
 
+/* Section Styling */
 .sheet-column {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -72,27 +84,36 @@ form button:hover {
 }
 
 .sheet-section h3 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #444;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 }
 
 .sheet-section p {
-    margin: 10px 0;
+    margin: 8px 0;
     font-size: 14px;
+    color: #555;
 }
 
 textarea, input[type="number"], input[type="text"], select {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus, input[type="number"]:focus, input[type="text"]:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 /* Buttons */
@@ -101,11 +122,14 @@ textarea, input[type="number"], input[type="text"], select {
     text-decoration: none;
     background-color: #007bff;
     color: #fff;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 4px;
     margin: 10px 5px;
     text-align: center;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -133,4 +157,16 @@ textarea, input[type="number"], input[type="text"], select {
     .sheet-container {
         grid-template-columns: 1fr;
     }
+    .sheet-column {
+        padding: 10px;
+    }
+    form {
+        max-width: 100%;
+    }
+}
+
+/* Hover Effects for Columns */
+.sheet-column:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
