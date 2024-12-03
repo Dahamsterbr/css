@@ -83,3 +83,41 @@ footer .logout {
     left: 20px;
     bottom: 10px;
 }
+
+
+/* General button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8b0000; /* Dark red */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a00000; /* Slightly lighter red */
+}
+
+/* Specific styles for confirm and cancel buttons */
+.confirm-button {
+    background-color: #006400; /* Dark green */
+}
+
+.confirm-button:hover {
+    background-color: #008000; /* Lighter green */
+}
+
+.cancel-button {
+    background-color: #8b0000; /* Dark red */
+}
+
+.cancel-button:hover {
+    background-color: #a00000; /* Slightly lighter red */
+}
