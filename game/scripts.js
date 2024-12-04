@@ -7,3 +7,23 @@ document.addEventListener("DOMContentLoaded", function () {
         xpBarFill.style.width = `${percentage}%`;
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const openModalButton = document.getElementById("openModalButton");
+    const closeModalButton = document.getElementById("closeModalButton");
+    const modal = document.getElementById("monsterModal");
+    // Open Modal
+    openModalButton.addEventListener("click", function () {
+        modal.classList.remove("hidden");
+    });
+    // Close Modal
+    closeModalButton.addEventListener("click", function () {
+        modal.classList.add("hidden");
+    });
+    // Close Modal when clicking outside
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.classList.add("hidden");
+        }
+    });
+});
