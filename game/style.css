@@ -173,31 +173,37 @@ button:hover, .button:hover {
 
 /* Forms */
 form {
+    display: flex;
+    flex-direction: column; /* Stack the form elements vertically */
+    align-items: stretch; /* Ensure inputs stretch to fit the parent */
     background-color: #2a2a2a; /* Dark background */
     border: 1px solid #444; /* Subtle border */
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-    max-width: 600px; /* Limit form width */
-    margin: 20px auto; /* Center horizontally */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* Allow form to scale with the parent */
+    margin: 20px auto;
+    gap: 15px; /* Space between form elements */
 }
 
+/* Labels */
 label {
-    display: block;
-    margin-bottom: 10px;
     font-weight: bold;
-    color: #d4af37; /* Gold for labels */
+    color: #d4af37;
+    margin-bottom: 5px;
 }
 
-input, select {
-    width: 100%;
+/* Inputs, Select, and Buttons */
+input, select, button {
+    width: 100%; /* Make the input/selection stretch to fit container */
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #444; /* Subtle border */
+    margin: 0; /* Remove default margin to ensure clean alignment */
+    border: 1px solid #444;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #333; /* Dark input background */
-    color: #f4f4f4; /* Light text */
+    background-color: #333;
+    color: #f4f4f4;
+    box-sizing: border-box; /* Include padding and border in width calculation */
 }
 
 input:focus, select:focus {
@@ -207,17 +213,35 @@ input:focus, select:focus {
 }
 
 button {
-    background-color: #4CAF50; /* Green for submit button */
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #45a049; /* Slightly lighter green */
-    transform: translateY(-2px); /* Lift effect */
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+/* Adjustments for Number Inputs */
+input[type="number"] {
+    appearance: textfield; /* Remove the spinner for consistent styling */
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Hide the spinners in webkit browsers */
+    margin: 0;
+}
+
+select {
+    appearance: none; /* Remove default styling */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23f4f4f4" height="24" viewBox="0 0 24 24" width="24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    padding-right: 2em; /* Add space for dropdown arrow */
 }
