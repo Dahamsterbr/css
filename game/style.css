@@ -349,13 +349,13 @@ table {
 }
 
 table th, table td {
-    border: 1px solid #ccc;
+    border: 1px solid #444;
     padding: 10px;
     text-align: center;
 }
 
 table th {
-    background-color: #f4f4f4;
+    background-color: #444;
     font-weight: bold;
 }
 
