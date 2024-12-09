@@ -222,3 +222,15 @@ table a {
 table a:hover {
     text-decoration: underline;
 }
+
+.announcement-navigation a {
+    background-color: #003399;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.announcement-navigation a:hover {
+    background-color: #002266;
+}
