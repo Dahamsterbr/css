@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.meos-header {
+    background-color: #003399; /* Donkerblauw politie */
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #ffcc00; /* Geel accent */
+}
+
+.meos-main {
+    padding: 20px;
+    background: #fff;
+}
+
+.meos-footer {
+    background: #003399;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Of weglaten als je geen vaste footer wilt */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Voor formulieren en tabellen */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form button {
+    background: #003399;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #002266;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #f2f2f2;
+    font-weight: bold;
+}
