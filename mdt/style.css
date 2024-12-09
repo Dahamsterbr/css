@@ -1,8 +1,14 @@
-body {
+body, html {
+    height: 100%; /* Ensure the body and HTML take the full height of the viewport */
     margin: 0;
-    font-family: sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-wrapper {
+    flex: 1; /* Ensures the main content fills available space */
+    display: flex;
+    flex-direction: column;
 }
 
 .meos-header {
@@ -45,18 +51,17 @@ body {
 }
 
 .meos-main {
+    flex: 1; /* Allows the main content to grow and push the footer down */
     padding: 20px;
     background: #fff;
 }
 
+/* Footer styling */
 .meos-footer {
     background: #003399;
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed; /* Of weglaten als je geen vaste footer wilt */
-    width: 100%;
-    bottom: 0;
 }
 
 /* Voor formulieren en tabellen */
