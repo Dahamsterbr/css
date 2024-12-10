@@ -63,7 +63,23 @@ body, html {
     text-align: center;
     padding: 10px;
 }
+.meos-footer .logout-form {
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Ensure the form behaves like the button */
+}
+.meos-footer .logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.meos-footer .logout-button:hover {
+    background-color: #c82333; /* Slightly darker red on hover */
+}
 /* Voor formulieren en tabellen */
 form {
     max-width: 400px;
@@ -303,4 +319,12 @@ table a:hover {
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+#openModal {
+    background-color: #28a745; /* Green for notes button */
+}
+
+#openModal:hover {
+    background-color: #218838; /* Slightly darker green on hover */
 }
