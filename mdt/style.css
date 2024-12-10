@@ -66,15 +66,6 @@ body, html {
     color: white;
 }
 
-.meos-footer button {
-    display: inline-block;
-    margin: 0;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: none; /* Removes any extra shadow or border effects */
-}
-
 .meos-footer button:hover {
     opacity: 0.9; /* Slight opacity change for hover effect */
 }
