@@ -58,33 +58,10 @@ body, html {
 
 /* Footer styling */
 .meos-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
     background: #003399;
-    color: white;
-}
-
-.meos-footer button:hover {
-    opacity: 0.9; /* Slight opacity change for hover effect */
-}
-
-/* Specific Button Colors */
-#openModal {
-    background-color: #28a745; /* Green for notes button */
-}
-
-#openModal:hover {
-    background-color: #218838; /* Slightly darker green on hover */
-}
-
-.meos-footer form button {
-    background-color: #dc3545; /* Red for logout button */
-}
-
-.meos-footer form button:hover {
-    background-color: #c82333; /* Slightly darker red on hover */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Voor formulieren en tabellen */
