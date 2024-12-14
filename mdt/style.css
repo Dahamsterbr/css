@@ -64,7 +64,7 @@ body, html {
 
 /* Footer styling */
 .meos-footer {
-    background: #003399;
+    background: #3260a8;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -108,7 +108,7 @@ form textarea {
 }
 
 form button {
-    background: #003399;
+    background: #3260a8;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -160,7 +160,7 @@ table th {
 .login-container h1 {
     margin-bottom: 20px;
     font-size: 1.5em;
-    color: #003399; /* Donkerblauwe titel voor politie-stijl */
+    color: #3260a8; /* Donkerblauwe titel voor politie-stijl */
 }
 
 .login-container form {
@@ -180,7 +180,7 @@ table th {
 }
 
 .login-container form button {
-    background: #003399;
+    background: #3260a8;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -230,13 +230,13 @@ table th, table td {
 }
 
 table th {
-    background: #003399;
+    background: #3260a8;
     color: #fff;
     font-weight: bold;
 }
 
 table a {
-    color: #003399;
+    color: #3260a8;
     text-decoration: none;
     font-weight: bold;
 }
@@ -246,7 +246,7 @@ table a:hover {
 }
 
 .announcement-navigation a {
-    background-color: #003399;
+    background-color: #3260a8;
     color: #fff;
     padding: 5px 10px;
     text-decoration: none;
@@ -282,7 +282,7 @@ table a:hover {
 
 #noteModal h2 {
     margin-top: 0;
-    color: #003399;
+    color: #3260a8;
 }
 
 #noteModal button {
