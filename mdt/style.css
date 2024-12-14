@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 body, html {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
     height: 100%; /* Ensure the body and HTML take the full height of the viewport */
     margin: 0;
     display: flex;
@@ -12,7 +16,7 @@ body, html {
 }
 
 .meos-header {
-    background-color: #003399; /* Donkerblauw politie */
+    background-color: #3260a8; /* Donkerblauw politie */
     padding: 10px;
 }
 
