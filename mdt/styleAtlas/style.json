@@ -1,0 +1,55 @@
+{
+  "version": 8,
+  "name": "GTA V Atlas Static PNG",
+  "metadata": {
+    "description": "Static GTA V/FiveM atlas PNG used as a MapLibre basemap for Grafana Geomap."
+  },
+  "center": [
+    0,
+    0
+  ],
+  "zoom": 0,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "gta_atlas_png": {
+      "type": "image",
+      "url": "https://dahamsterbr.github.io/css/mdt/styleAtlas/map.png",
+      "coordinates": [
+        [
+          -180,
+          85.05112878
+        ],
+        [
+          180,
+          85.05112878
+        ],
+        [
+          180,
+          -85.05112878
+        ],
+        [
+          -180,
+          -85.05112878
+        ]
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#000000"
+      }
+    },
+    {
+      "id": "gta_atlas_png",
+      "type": "raster",
+      "source": "gta_atlas_png",
+      "paint": {
+        "raster-opacity": 1
+      }
+    }
+  ]
+}
